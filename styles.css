@@ -1,0 +1,205 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+header {
+    background: linear-gradient(90deg, #333, #555); /* Modern gradient background */
+    color: white;
+    padding: 1em 0;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add a shadow to the header */
+    position: fixed; /* Fixed position to stay at the top */
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    transition: background 0.3s, padding 0.3s;
+}
+
+header.transparent {
+    background: rgba(51, 51, 51, 0.5); /* Transparent background */
+    padding: 0.5em 0;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    transition: max-height 0.5s ease-in-out;
+    overflow: hidden;
+}
+
+nav ul li {
+    margin: 0 1em;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.menu-icon {
+    display: none;
+    cursor: pointer;
+    position: absolute;
+    top: 0.5em; /* Adjusted to ensure it's within the header */
+    left: 1em;
+}
+
+.menu-icon i {
+    font-size: 1.5em;
+    color: #fff; /* Bright white color for visibility */
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3); /* Subtle shadow for contrast */
+}
+@media (max-width: 600px) {
+    .menu-icon {
+        display: block;
+    }
+}
+
+section {
+    padding: 4em 1em;
+    text-align: center;
+    background: white;
+    margin: 2em 0;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+section h1, section h2 {
+    color: #333; /* Modern dark gray */
+}
+
+.profile-pic {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin: 1em 0;
+}
+
+.social-icons {
+    margin-top: 1em;
+}
+
+.social-icons a {
+    color: #333; /* Modern dark gray */
+    text-decoration: none;
+    font-size: 1.5em;
+    margin: 0 0.5em;
+}
+
+form {
+    max-width: 400px;
+    margin: 0 auto;
+    background: #f9f9f9;
+    padding: 2em;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+input, textarea, button {
+    width: 100%;
+    padding: 0.75em;
+    margin: 0.5em 0;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+button {
+    background-color: #333; /* Modern dark gray */
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #555; /* Slightly lighter for hover effect */
+}
+
+.project {
+    display: inline-block;
+    width: calc(50% - 2em);
+    margin: 1em;
+    background: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.project img {
+    width: 100%;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+
+.animated-heading {
+    animation: fadeIn 2s ease-in-out;
+}
+
+#skills {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Center align the skills */
+    gap: 20px; /* Add space between skill items */
+    padding: 2em;
+}
+
+.skill {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center align the content inside each skill */
+    width: 150px; /* Fixed width for uniform alignment */
+    text-align: center; /* Center text */
+    padding: 10px; /* Add padding for spacing */
+    box-sizing: border-box; /* Include padding in element's total width */
+    border: 1px solid #ddd; /* Add a subtle border for definition */
+    border-radius: 8px; /* Rounded corners for modern look */
+    background-color: #fff; /* Ensure a uniform background */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add subtle shadow */
+}
+.skill i {
+    font-size: 3em; /* Increased from 2em to 3em */
+    color: #333; /* Modern dark gray */
+    margin-bottom: 0.5em; /* Space between icon and text */
+}
+
+
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+@media (max-width: 600px) {
+    nav ul {
+        display: none; /* Hidden by default */
+        flex-direction: column;
+        align-items: center; /* Center items horizontally */
+        justify-content: center; /* Center items vertically */
+        background-color: #333; /* Ensure the background color matches the header */
+        position: absolute;
+        top: 100%;
+        width: 100%;
+        left: 0;
+        max-height: 0;
+        overflow: hidden;
+    }
+
+    nav ul.show {
+        display: flex; /* Show the menu when 'show' class is added */
+        max-height: 300px;
+    }
+
+    nav ul li {
+        margin: 1em 0;
+        width: 100%; /* Full width for centering */
+        text-align: center; /* Center text */
+    }
+
+    .menu-icon {
+        display: block;
+    }
+}
