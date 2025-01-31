@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="menu-icon" id="menuIcon">
+                <i class="fas fa-bars"></i>
+            </div>
+            <ul id="navLinks">
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#hire">Hire Me</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section id="about">
+        <h1 class="animated-heading">Hello, Your name </h1>
+        <img src="profile.jpg" alt="Profile Picture" class="profile-pic">
+        <p> Im a passionate Web developer </p>
+        <div class="social-icons">
+            <a href="https://www.linkedin.com" target="_blank"><i class="fab fa-linkedin"></i></a>
+            <a href="https://github.com" target="_blank"><i class="fab fa-github"></i></a>
+        </div>
+    </section>
+    <section id="skills">
+        <h2>Skills</h2>
+        <div class="skill">
+            <i class="fab fa-html5"></i>
+            <h3>HTML</h3>
+            <p>Proficient in creating structured, semantic, and accessible web content using HTML5.</p>
+        </div>
+        <div class="skill">
+            <i class="fab fa-css3-alt"></i>
+            <h3>CSS</h3>
+            <p>Experienced in styling web pages with CSS3, including Flexbox, Grid, and responsive design.</p>
+        </div>
+        <div class="skill">
+            <i class="fab fa-js-square"></i>
+            <h3>JavaScript</h3>
+            <p>Skilled in adding interactivity and dynamic content to web pages using JavaScript ES6.</p>
+        </div>
+        <div class="skill">
+            <i class="fab fa-bootstrap"></i>
+            <h3>Bootstrap</h3>
+            <p>Skilled in using Bootstrap to create responsive and mobile-first web designs efficiently.</p>
+        </div>
+        <div class="skill">
+            <i class="fas fa-code"></i>
+            <h3>ASP.NET</h3>
+            <p>Familiar with building web applications and services using ASP.NET framework.</p>
+        </div>
+        <div class="skill">
+            <i class="fab fa-git"></i>
+            <h3>Git</h3>
+            <p>Proficient in version control and collaborative development using Git and GitHub.</p>
+        </div>
+    </section>
+    <section id="projects">
+        <h2>Projects</h2>
+        <div class="project">
+            <img src="project1.jpg" alt="Project 1">
+            <h3> Title of project</h3>
+            <p>Description of project :
+                <br><br>
+                technologies:
+            </p>
+        </div>
+        <div class="project">
+            <img src="project2.jpg" alt="Project 2">
+            <h3>Title of project</h3>
+            <p>
+                technologies:
+            </p>
+        </div>
+    </section>
+
+    <section id="hire">
+        <h2>Hire Me</h2>
+        <form id="hireForm">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" required></textarea>
+            <button type="submit">Send</button>
+        </form>
+        <p id="formResponse"></p>
+    </section>
+    <footer>
+        <p><center>&copy; 2025 Your Name. All rights reserved.</center></p>
+    </footer>
+    <script src="scripts.js"></script>
+</body>
+</html>
+
+ <!--To_deploy_Website_free
+https://www.netlify.com/ -->
